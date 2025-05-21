@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="MAIN" Id="{7714da33-2d4a-4cb7-869a-08ca3cc18d03}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	safe_err_ack AT %Q* : BOOL;
+	safe_run AT %Q* : BOOL;
+	safe_reset AT %Q* : BOOL;
+	
+	com_check_pub AT %Q* : BOOL;
+	com_check_sub AT %I* : BOOL;
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
